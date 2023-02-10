@@ -1,0 +1,38 @@
+body{
+    background-color: #eee;
+    font-family: calibri;
+}
+#content{
+    background-color: white;
+    width:250px;
+    max-height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: justify;
+    color: #444;
+    padding: 0 10px;
+    transition: max-height 0.7s;
+    
+
+}
+
+#content.open{
+    max-height: 1000px;
+    transition: max-height 0.7s;
+}
+#show-more{
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+    background-color: blue;
+    border: none;
+}
+#show-more:hover{
+    background-color: lightblue;
+    transition: background-color 0.7s;
+
+}
