@@ -22,11 +22,14 @@ body{
 }
 
 #colour-changer{
-    width: 200px;
-    height:100px;
+    width: 400px;
+    height: 400px;
+    background-image: url('image2.jpg');
+    object-fit: contain;
+    background-size: contain;
     margin: 30px auto;
     border: 1px solid #000;
-    background: #fff;
+    /* background: #fff; */
     transition: background 0.7s
 
 }
