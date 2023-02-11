@@ -42,7 +42,7 @@ function changeImage(){
 
 
 
-let myTimer = setInterval(changeImage, 3000)
+let myTimer = setInterval(changeImage, 1000)
 
 
 colourChanger.ondblclick = function(){
