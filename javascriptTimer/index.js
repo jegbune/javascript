@@ -11,7 +11,7 @@ setTimeout(showMessage, 3000);*/
 
 let colourChanger = document.getElementById("colour-changer");
 
-let colours =["red","blue","green","pink"];
+let colours =["red","blue","green","pink","yellow"];
 
 let counter = 0;
 
@@ -28,4 +28,10 @@ function changeColor(){
 
 
 
-setInterval(changeColor, 3000) 
+let myTimer = setInterval(changeColor, 3000)
+
+colourChanger.onclick = function(){
+
+    clearInterval(myTimer);
+    colourChanger.innerHTML = "Timer stopped"
+}
