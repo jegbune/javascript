@@ -5,16 +5,17 @@ let counts = 0;
 
 function slide1(){
     
-    for(let i = 0; i < picture.length; i++){
-        
-        picture[i].style.backgroundImage = "url(images/" + pic[count]+ ")";
-        counts++;
-
-    }
-
     if(counts >= pic.length){
         counts = 0;
     }
+    for(let i = 0; i < picture.length; i++){
+        
+        picture[i].style.backgroundImage = "url(images/" + pic[counts]+ ")";
+
+    }
+    counts++;
+
+
     
 
 }

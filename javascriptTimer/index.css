@@ -46,6 +46,7 @@ body{
 }
 p{
     margin:0;
+    font-size: 20px;
 }
 
 .product{
@@ -54,18 +55,38 @@ p{
     flex-wrap: wrap;
 }
 .title{
-    width: 250px;
-    max-height: 350px;
+    width: 300px;
+    max-height: 400px;
     box-shadow: 0px 0px 1px black;
-
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 20px;
 
 }
 .picture{
     height: 300px;
-    border-bottom: 1px solid grey;
     background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .product-title{
-    padding: 3px;
-    height: 50px;
+    padding: 5px;
+    height: 100px;
+}
+.buy{
+    display: block;
+    padding:10px;
+    background-color: orange;
+    margin: 5px auto;
+    opacity: 0.5;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+}
+.buy:hover{
+    opacity: 1;
+    transition: opacity 0.7s;
+}
+.title:hover{
+    box-shadow: 0px 0px 50px solid black;
 }
