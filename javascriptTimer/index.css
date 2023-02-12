@@ -33,3 +33,14 @@ body{
     transition: background 0.7s
 
 }
+
+#slide{
+    display: block;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin:20px auto;
+    background-size: cover ;
+            
+
+}
