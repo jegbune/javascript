@@ -41,6 +41,30 @@ body{
     border: 1px solid black;
     margin:20px auto;
     background-size: cover ;
-            
 
+
+}
+p{
+    margin:0;
+}
+
+.product{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.title{
+    width: 250px;
+    max-height: 350px;
+    box-shadow: 0px 0px 1px black;
+
+
+}
+.product-picture{
+    height: 300px;
+    border-bottom: 1px solid grey;
+}
+.product-title{
+    padding: 3px;
+    height: 50px;
 }
