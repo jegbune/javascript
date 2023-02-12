@@ -60,9 +60,10 @@ p{
 
 
 }
-.product-picture{
+.picture{
     height: 300px;
     border-bottom: 1px solid grey;
+    background-size: cover;
 }
 .product-title{
     padding: 3px;
