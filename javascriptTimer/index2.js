@@ -1,5 +1,5 @@
 let picture = document.getElementsByClassName("picture");
-let pic = ["image1.jpg","image2.jpg","image3.jpg","image4.jpg","image5.jpg"];
+let pic = ["image1.jpg","image2.jpg","image3.jpg","image4.jpg","image5.jpg","image6.jpg","image7.jpg","image8.jpg","image9.jpg","image10.jpg"];
 let counts = 0;
 
 
@@ -14,9 +14,6 @@ function slide1(){
 
     }
     counts++;
-
-
-    
 
 }
 
