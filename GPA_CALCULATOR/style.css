@@ -1,3 +1,13 @@
 table{
     border: 1px solid black;
+    margin: 50px auto;
+}
+td{
+    border: 1px solid grey;
+}
+p{
+    margin:0px;
+}
+.courses{
+    width: 100px;   
 }
