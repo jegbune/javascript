@@ -1,45 +1,81 @@
-let num = document.querySelector("#numbers");
-let button = document.querySelector(".Btn");
+let input = document.querySelector("#numbers");
+let button = document.querySelector("#Btn");
 let result = document.querySelector(".result");
 
-/*i = [1,5,10,50,100,500,1000];
-let I = i[0];
-let V = i[1];
-let X = i[2];
-let L = i[3];
-let C = i[4];
-let D = i[5];
-let M = i[6];*/
 
-
-button.addEventListener("click", function(){
+/*num.addEventListener("blur", function(){
     let numb = parseInt(num.value);
 
     if(numb >= 1000 && numb >= 3000){
         numb -= 1000;
-       let answer = "M";
+        first = "M";
+       let answer = result.innerHTML = "M";
     }else if(numb >= 500){
         numb -= 500;
-        let answer1 = "D"
+        second = "D";
+        let answer1 = result.innerHTML = "D"
     }else if(numb >= 100){
         numb -= 100;
-        let answer2 = "C"
+        third = "C";
+        let answer2 = result.innerHTML = "C"
     }else if(numb >= 50){
         numb -= 50;
-        let answer3 = "L"
+        fourth ="L";
+        let answer3 = result.innerHTML = "L"
     }else if(numb >= 10){
         numb -= 10;
-        let answer4 = "X"
+        fifth = "X";
+        let answer4 = result.innerHTML = "X"
     }else if(numb >= 5){
         numb -= 5;
-        let answer5 = "V"
+        sixth = "V";
+        let answer5 = result.innerHTML = "V"
     }else if(numb >= 1){
         numb -= 1;
-        let answer6 = "I"
+        seventh = "I";
+        let answer6 = result.innerHTML = "I"
     }
 
+    let total = answer + answer1 + answer2 + answer3 + answer4 + answer5 + answer6
 
+    result.innerHTML = total;
     return;
-    let total = answer + answer1 + answer2 + answer3 + answer4 + answer5 + answer6})
+});*/
 
-result.textContent = answer + answer 
+const lookupTable = {
+    M: 1000,
+    CM: 900,
+    D: 500,
+    CD: 400,
+    C: 100,
+    XC: 90,
+    L: 50,
+    XL:40,
+    X: 10,
+    IX: 9,
+    V: 5,
+    IV: 4,
+    I: 1,
+
+}
+let accumulator = '';
+button.addEventListener('click', function(){
+   
+let inputValue = input.value;
+// alert(input.value);
+    
+    for(const i in lookupTable){
+        const numberValue = lookupTable[i];
+    
+        while(numberValue <= inputValue){
+        
+                inputValue -= numberValue;
+                accumulator += i;
+    
+        }
+        //     result.textContent = accumulator
+    }
+    alert(accumulator);
+
+
+});
