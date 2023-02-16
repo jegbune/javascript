@@ -17,53 +17,29 @@ button.addEventListener("click", function(){
 
     if(numb >= 1000 && numb >= 3000){
         numb -= 1000;
-       let answer = result.innerHTML = "M";
+       let answer = "M";
     }else if(numb >= 500){
         numb -= 500;
-        let answer = result.innerHTML = "D"
+        let answer1 = "D"
     }else if(numb >= 100){
         numb -= 100;
-        let answer = result.innerHTML = "C"
+        let answer2 = "C"
     }else if(numb >= 50){
         numb -= 50;
-        let answer = result.innerHTML = "L"
+        let answer3 = "L"
     }else if(numb >= 10){
         numb -= 10;
-        let answer = result.innerHTML = "X"
+        let answer4 = "X"
     }else if(numb >= 5){
         numb -= 5;
-        let answer = result.innerHTML = "V"
+        let answer5 = "V"
     }else if(numb >= 1){
         numb -= 1;
-        let answer = result.innerHTML = "I"
-    }
-
-    if(numb > 1000 && numb <= 3000){
-        numb -= 1000;
-       let answer = result.innerHTML = "M";
-    }else if(numb >= 500 && numb < 1000){
-        numb -= 500;
-        let answer = result.innerHTML = "D"
-    }else if(numb >= 100 && numb < 500){
-        numb -= 100;
-        let answer = result.innerHTML = "C"
-    }else if(numb >= 50 && numb < 100){
-        numb -= 50;
-        let answer = result.innerHTML = "L"
-    }else if(numb >= 10 && numb < 50){
-        numb -= 10;
-        let answer = result.innerHTML = "X"
-    }else if(numb >= 5 && numb < 10){
-        numb -= 5;
-        let answer = result.innerHTML = "V"
-    }else if(numb >= 1 && numb < 5){
-        numb -= 1;
-        let answer = result.innerHTML = "I"
+        let answer6 = "I"
     }
 
 
     return;
-    let answer = answer+answer+answer
-})
+    let total = answer + answer1 + answer2 + answer3 + answer4 + answer5 + answer6})
 
 result.textContent = answer + answer 
