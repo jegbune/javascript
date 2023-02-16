@@ -1,0 +1,13 @@
+.main, .result{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#numbers{
+    font-size: 20px;
+}
+.Btn{
+    margin-left: -4px;
+    font-size: 20px;
+}
