@@ -21,6 +21,9 @@ const lookupTable = {
     I: 1,
 
 }
+let value = '';
+
+//conversion from Roman Numeral to Number
 //when you click on the button it will make the conversion
 // button.addEventListener('click', function(){
 //     let accumulator = '';
@@ -50,7 +53,6 @@ const lookupTable = {
 //         });
 
 button1.addEventListener('click', function(){
-    let value = '';
     let input1Value = input1.value;
     //Maximum number that can be calculated is 3999.
     // if(inputValue > 3999){
@@ -61,28 +63,47 @@ button1.addEventListener('click', function(){
        let input3 = input2.split("")
         // alert(typeof input3)
     
+        for(const key in lookupTable){
+         const numberValue1 = lookupTable[key];
         for(const i in input3){
             const roman = input3[i];
-            for(const key in lookupTable){
-             const numberValue1 = lookupTable[key];
-             while(roman === key){
-                 if(roman = input3){
-                 alert(input3.length)
-             value += numberValue1;           
-             alert(value);
-             roman = input3[i]
-            }
+
+            while(i <= input3.length){
+                // value += lookupTable[input2];
+                // if(roman === key){
+                        
+                        alert();    
+                        
+                        // alert(lookupTable.input3);
+                        
+                        // }
+                // }
+                
+                //     if(roman === ){
+                //         value += numberValue1;
+                //         // alert(numberValue1)
+                //         alert(value)
+       
+                    // }
+                // }
+
+            //      if(roman = input3){
+            //      alert(input3.length)
+            //  value += numberValue1;           
+            //  alert(value);
+            //  roman = input3[i]
             
-        }
+            
+        // }
        }
             // alert(input3[i])
         // if(input2 === i){
             // if(input2 >= i){
                 // alert(numberValue1);
 
-            // }
+            }
 
-        // }
+        }
 
 
         /*while(numberValue <= inputValue){
