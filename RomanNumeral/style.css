@@ -1,25 +1,33 @@
 .main, .result{
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width:400px;
-    height: 400px;
+    height: 200px;
     border: 1px solid black;
     margin: auto
 }
 #numbers{
     font-size: 20px;
+    padding: 10px;
 }
-.Btn{
-    margin-left: -4px;
+#Btn{
+    /* margin-left: -4px; */
     font-size: 20px;
+    padding: 10px;
 }
 .result{
-    position: absolute;
     width: 300px;
     height: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     border: 1px solid black;
     background-color: lightblue;
     color: black;
     font-size: 30px;
+    transition: display 0.01s;
+    bottom: 40px;
 }
