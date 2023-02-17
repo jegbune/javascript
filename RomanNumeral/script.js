@@ -65,10 +65,12 @@ button1.addEventListener('click', function(){
             const roman = input3[i];
             for(const key in lookupTable){
              const numberValue1 = lookupTable[key];
-            alert(numberValue1);
-        if(roman === key){
-            alert();
-                
+             while(roman === key){
+                 if(roman = input3){
+                 alert(input3.length)
+             value += numberValue1;           
+             alert(value);
+             roman = input3[i]
             }
             
         }
