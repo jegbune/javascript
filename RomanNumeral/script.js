@@ -61,6 +61,27 @@ button.addEventListener('click', function(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // button1.addEventListener('click', function(){
 // let value = '';
 //     let input1Value = input1.value;
