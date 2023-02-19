@@ -1,12 +1,13 @@
-import { convert } from "./romanfunction";
-let input = document.querySelector("#numbers");
+import { convert } from "./romanfunction.js";
+
+let input = document.getElementById('');
 let button = document.querySelector("#Btn");
 let result = document.querySelector(".result");
 
+console.log(convert(80));
 
-button.addEventListener('click', function(){
 let input1 = Number(input.value);
+button.addEventListener('click', convert(input1))
     
-    alert(input1);
-})
-// console.log(convert(80));
+    // alert(input1);
+// })
