@@ -25,6 +25,7 @@ export function convert(number){
         }
     }
     
-      return accumulator;
+    console.log(accumulator);
+    //   return accumulator;
     
 }
